@@ -13,6 +13,57 @@
 
 <body>
 
+    <div class="page__popup popup">
+        <form action="#" class="popup__form form">
+            <div class="form_close close">
+                <button type="button" class="close__btn">
+                    <img src="/img/cross__popup.svg" alt="cross" width="10px" height="10px">
+                </button>
+            </div>
+            <ul class="form__header header-form">
+                <li class="header-form__container header-form__container_signin">
+                    <button type="button"
+                        class="header-form__headline header-form__headline_signin header-form__headline_active">Вход</button>
+                </li>
+                <li class="header-form__container header-form__container_signup">
+                    <button type="button"
+                        class="header-form__headline header-form__headline_signup">Регистрация</button>
+                </li>
+            </ul>
+            <div class="form__signup signin signin_active">
+                <label><input type="email" name="" id="signinEmail" placeholder="E-mail"
+                        class="form__input signin__email"></label>
+                <label><input type="password" name="" id="signinPassword" placeholder="Пароль"
+                        class="form__input signin__password password__input"></label>
+                <a href="#" class="signin__password-forget">Забыли пароль?</a>
+                <div class="form_btn-body">
+                    <button type="button" class="form__btn signin__btn">Войти</button>
+                </div>
+            </div>
+            <div class="form__signup signup">
+                <label class="signup__label signup__label_email"><input type="email" name="" id="signupEmail"
+                        placeholder="E-mail" class="form__input signup__email"></label>
+                <label class="signup__label signup__label_password"><input type="password" name="" id="signupPassword"
+                        placeholder="Пароль" class="form__input signup__password password__input"></label>
+                <label class="signup__label signup__label_password-repeat"><input type="password" name=""
+                        id="signupPasswordRepeat" placeholder="Повторите пароль"
+                        class="form__input signup__password-repeat password__input"></label>
+                <label class="signup__label signup__label_checkbox checkbox">
+                    <input class="signup__checkbox" type="checkbox" id="signupCheckbox" checked>
+                    <p class="checkbox__text">Я принимаю условия <a href="#"
+                            class="checkbox__text_link">Пользовательского
+                            соглашения</a> и даю своё согласие на обработку персональных данных на условиях,
+                        определенных <a href="#" class="checkbox__text_link">Политикой конфиденциальности.</a></p>
+                </label>
+                <div class="form_btn-body">
+                    <button type="button" class="form__btn signup__btn">Регистрация</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
     <header class="page__header header">
         <div class="header__container">
             <nav class="header__nav">
@@ -20,26 +71,28 @@
                     <img class="logo__icon" src="img/logo.svg" alt="Authortie">
                 </li>
                 <ul class="site__navigation  site-navigation">
-
                     <li class="site-navigation__item">
-                        <a href="" class="site-navigation__link">Аналитика</a>
+                        <a href="#" class="site-navigation__link">Аналитика</a>
                     </li>
                     <li class="site-navigation__item">
-                        <a href="" class="site-navigation__link">Сообщество</a>
+                        <a href="#" class="site-navigation__link">Сообщество</a>
                     </li>
                     <li class="site-navigation__item site-navigation__item">
-                        <a href="" class="site-navigation__link site-navigation__item_last">Для организаций</a>
+                        <a href="#" class="site-navigation__link site-navigation__item_last">Для организаций</a>
                     </li>
                 </ul>
                 <ul class="user__navigation user-navigation">
                     <li class="user-navigation__item user-navigation__item_btn">
-                        <button class="user-navigation__btn">Создать заявку</button>
+                        <button type="button" class="user-navigation__btn">Создать заявку</button>
                     </li>
                     <li class="user-navigation__item user-navigation__item_last">
-                        <img class="user-navigation__icon user-navigation__icon_last" src="img/login.svg" alt="">
-                        <button class="user-navigation__burger">
+                        <button type="button" class="user-navigation__login">
+                            <img class="user-navigation__icon user-navigation__icon_login" src="img/login.svg"
+                                alt="login">
+                        </button>
+                        <button type="button" class="user-navigation__burger">
                             <img class="user-navigation__icon user-navigation__icon_burger" src="img/nav__burger.svg"
-                                alt="">
+                                alt="burger">
                         </button>
                     </li>
                 </ul>
@@ -48,16 +101,16 @@
         <div class="header__nav_insert">
             <ul class="site-navigation_insert">
                 <li class="site-navigation__item_insert">
-                    <a href="" class="site-navigation__link_insert">Аналитика</a>
+                    <a href="#" class="site-navigation__link_insert">Аналитика</a>
                 </li>
                 <li class="site-navigation__item_insert">
-                    <a href="" class="site-navigation__link_insert">Сообщество</a>
+                    <a href="#" class="site-navigation__link_insert">Сообщество</a>
                 </li>
                 <li class="site-navigation__item_insert">
-                    <a href="" class="site-navigation__link_insert">Для организаций</a>
+                    <a href="#" class="site-navigation__link_insert">Для организаций</a>
                 </li>
                 <li class="site-navigation__item_insert site-navigation__item_login">
-                    <button class="site-navigation__btn site-navigation__btn_login">Войти</button>
+                    <button type="button" class="site-navigation__btn site-navigation__btn_login">Войти</button>
                 </li>
             </ul>
         </div>
@@ -65,7 +118,6 @@
     </header>
 
     <main class="page__main main">
-
         <div class="main__promo promo">
             <div class="promo__container">
                 <div class="promo__body">
@@ -75,49 +127,49 @@
                             ними
                             взаимовыгодное сотрудничество в областях совместных исследований, соавторства,
                             рецензирования и повышения индекса цитирования.</div>
-                        <button class="promo__btn">Присоединиться</button>
+                        <button type="button" class="promo__btn">Присоединиться</button>
                     </div>
                     <div class="promo__image-container">
-                        <img class="promo__image" src="img/bg-image.png" alt="">
+                        <img class="promo__image" src="img/bg-image.png" alt="background">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="main__howitworks howitworks">
-            <div class="howitworks__container">
+            <section class="howitworks__container">
                 <h1 class="howitworks__title">Как это работает</h1>
                 <div class="howitworks__list">
                     <li class="howitworks__item item-howitworks">
                         <div class="item-howitworks__image-container item-howitworks__image-container_first">
-                            <img class="item-howitworks__image" src="img/howitworks_1.svg" alt="">
+                            <img class="item-howitworks__image" src="img/howitworks_1.svg" alt="howitworks1">
                         </div>
                         <p class="item-howitworks__text">Оцените привлекательность <br>темы</p>
                     </li>
                     <li class="howitworks__item item-howitworks">
                         <div class="item-howitworks__image-container item-howitworks__image-container_second">
-                            <img class="item-howitworks__image" src="img/howitworks_2.svg" alt="">
+                            <img class="item-howitworks__image" src="img/howitworks_2.svg" alt="howitworks2">
                         </div>
                         <p class="item-howitworks__text">Выполните совместные исследования</p>
                     </li>
                     <li class="howitworks__item item-howitworks">
                         <div class="item-howitworks__image-container item-howitworks__image-container_third">
-                            <img class="item-howitworks__image" src="img/howitworks_3.svg" alt="">
+                            <img class="item-howitworks__image" src="img/howitworks_3.svg" alt="howitworks3">
                         </div>
                         <p class="item-howitworks__text">Улучшите написанную работу</p>
                     </li>
                     <li class="howitworks__item item-howitworks item-howitworks_last">
                         <div class="item-howitworks__image-container item-howitworks__image-container_last">
-                            <img class="item-howitworks__image" src="img/howitworks_4.svg" alt="">
+                            <img class="item-howitworks__image" src="img/howitworks_4.svg" alt="howitworks4">
                         </div>
                         <p class="item-howitworks__text">Продвиньте свою работу</p>
                     </li>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div class="main__community community">
-            <div class="community__container">
+            <section class="community__container">
                 <h1 class="community__title ">Сообщество</h1>
                 <p class="community__subtitle">Тысячи учёных уже предлагают свою помощь</p>
                 <ul class="community__list">
@@ -150,7 +202,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -162,7 +214,7 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
@@ -197,7 +249,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -209,7 +261,7 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
@@ -244,7 +296,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -256,7 +308,7 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
@@ -291,7 +343,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -303,7 +355,7 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
@@ -338,7 +390,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -350,7 +402,7 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
@@ -385,7 +437,7 @@
                         </ul>
                         <div class="item-community__author author">
                             <div class="author__img-container">
-                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                                <img class="author__img" src="img/author__photo.jpg" alt="author photo">
                             </div>
                             <div class="author__info info-author">
                                 <ul class=" info-author__list">
@@ -397,16 +449,16 @@
                             </div>
                         </div>
                         <div class="author__btns">
-                            <button class="author__btn">Предложить сотрудничество</button>
+                            <button type="button" class="author__btn">Предложить сотрудничество</button>
                             <a href="#" class="author__link link-author">
                                 <img class="link-author__img" src="img/author-link.svg" alt="">
                             </a>
                         </div>
                     </li>
 
-            </div>
+            </section>
             <div class="community__seeall">
-                <button class="community__seeall-btn">Смотреть все</button>
+                <button type="button" class="community__seeall-btn">Смотреть все</button>
             </div>
         </div>
 
@@ -422,29 +474,29 @@
                 <div class="footer__item item-footer item-footer_second">
                     <ul class="item-footer__list">
                         <li class="item-footer__item">
-                            <a href="" class="item-footer__link">Политика конфиденциальности</a>
+                            <a href="#" class="item-footer__link">Политика конфиденциальности</a>
                         </li>
                         <li class="item-footer__item">
-                            <a href="" class="item-footer__link">Аналитика</a>
+                            <a href="#" class="item-footer__link">Аналитика</a>
                         </li>
                         <li class="item-footer__item">
-                            <a href="" class="item-footer__link">Сообщество</a>
+                            <a href="#" class="item-footer__link">Сообщество</a>
                         </li>
                         <li class="item-footer__item">
-                            <a href="" class="item-footer__link">Для организаций</a>
+                            <a href="#" class="item-footer__link">Для организаций</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__item item-footer item-footer_last">
                     <ul class="item-footer__socials socials">
                         <li class="socials__item">
-                            <img clas="socials__icon" src="img/facebook (3) 1.svg" alt="">
+                            <img clas="socials__icon" src="img/footer__facebook.svg" alt="">
                         </li>
                         <li class="socials__item">
-                            <img clas="socials__icon" src="img/instagram (1) 1.svg" alt="">
+                            <img clas="socials__icon" src="img/footer__instagram.svg" alt="">
                         </li>
                         <li class="socials__item">
-                            <img clas="socials__icon" src="img/telegram 1.svg" alt="">
+                            <img clas="socials__icon" src="img/footer__telegram.svg" alt="">
                         </li>
                     </ul>
                 </div>

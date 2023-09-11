@@ -1,5 +1,60 @@
 'use strict'
 
+// ================== Popup
+
+let navBtn = document.getElementsByClassName('user-navigation__item_btn')[0];
+let logBtn = document.getElementsByClassName('user-navigation__login')[0];
+let logBtnMob = document.getElementsByClassName('site-navigation__btn_login')[0];
+
+let popup = document.getElementsByClassName('page__popup')[0];
+let popupBtn = document.getElementsByClassName('close')[0];
+
+navBtn.addEventListener('click', () => {
+   popup.classList.add('popup_active');
+});
+
+logBtn.addEventListener('click', () => {
+   popup.classList.add('popup_active');
+});
+
+logBtnMob.addEventListener('click', () => {
+   popup.classList.add('popup_active');
+});
+
+popupBtn.addEventListener('click', () => {
+   popup.classList.remove('popup_active');
+   document.getElementsByClassName('header-form__headline_active')[0].classList.remove('header-form__headline_active');
+   signinHeadline.classList.add('header-form__headline_active');
+})
+
+let signinBtn = document.getElementsByClassName('header-form__headline_signin')[0];
+let signinBody = document.getElementsByClassName('signin')[0];
+
+let signupBtn = document.getElementsByClassName('header-form__headline_signup')[0];
+let signupBody = document.getElementsByClassName('signup')[0];
+
+let signinHeadline = document.getElementsByClassName('header-form__headline_signin')[0];
+let signupHeadline = document.getElementsByClassName('header-form__headline_signup')[0];
+
+
+signinBtn.addEventListener('click', () => {
+   signupBody.classList.remove('signup_active');
+   signinBody.classList.add('signin_active');
+
+   signupHeadline.classList.remove('header-form__headline_active');
+   signinHeadline.classList.add('header-form__headline_active');
+});
+
+signupBtn.addEventListener('click', () => {
+   signinBody.classList.remove('signin_active');
+   signupBody.classList.add('signup_active');
+
+   signinHeadline.classList.remove('header-form__headline_active');
+   signupHeadline.classList.add('header-form__headline_active');
+})
+
+
+
 // ================== Header
 
 let burgerBtn = document.getElementsByClassName('user-navigation__burger')[0];
@@ -21,10 +76,9 @@ burgerBtn.addEventListener('click', () => {
    }
 });
 
+let navBtnText = document.getElementsByClassName('user-navigation__btn')[0];
 
-let navBtn = document.getElementsByClassName('user-navigation__btn')[0];
-
-document.documentElement.clientWidth < 481 ? navBtn.textContent = "+ заявка" : navBtn.textContent = "Создать заявку";
+document.documentElement.clientWidth < 481 ? navBtnText.textContent = "+ заявка" : navBtnText.textContent = "Создать заявку";
 
 
 
