@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Authortie</title>
+</head>
+
+<body>
+
+    <header class="page__header header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <li class="header__logo logo">
+                    <img class="logo__icon" src="img/logo.svg" alt="Authortie">
+                </li>
+                <ul class="site__navigation  site-navigation">
+
+                    <li class="site-navigation__item">
+                        <a href="" class="site-navigation__link">Аналитика</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="" class="site-navigation__link">Сообщество</a>
+                    </li>
+                    <li class="site-navigation__item site-navigation__item">
+                        <a href="" class="site-navigation__link site-navigation__item_last">Для организаций</a>
+                    </li>
+                </ul>
+                <ul class="user__navigation user-navigation">
+                    <li class="user-navigation__item user-navigation__item_btn">
+                        <button class="user-navigation__btn">Создать заявку</button>
+                    </li>
+                    <li class="user-navigation__item user-navigation__item_last">
+                        <img class="user-navigation__icon user-navigation__icon_last" src="img/login.svg" alt="">
+                        <button class="user-navigation__burger">
+                            <img class="user-navigation__icon user-navigation__icon_burger" src="img/nav__burger.svg"
+                                alt="">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__nav_insert">
+            <ul class="site-navigation_insert">
+                <li class="site-navigation__item_insert">
+                    <a href="" class="site-navigation__link_insert">Аналитика</a>
+                </li>
+                <li class="site-navigation__item_insert">
+                    <a href="" class="site-navigation__link_insert">Сообщество</a>
+                </li>
+                <li class="site-navigation__item_insert">
+                    <a href="" class="site-navigation__link_insert">Для организаций</a>
+                </li>
+                <li class="site-navigation__item_insert site-navigation__item_login">
+                    <button class="site-navigation__btn site-navigation__btn_login">Войти</button>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="page__main main">
+
+        <div class="main__promo promo">
+            <div class="promo__container">
+                <div class="promo__body">
+                    <div class="promo__article">
+                        <h2 class="promo__headline">Сообщество взаимопомощи между учёными со всего мира</h2>
+                        <div class="promo__text">Удобный сервис, который подберёт для вас коллег и поможет наладить с
+                            ними
+                            взаимовыгодное сотрудничество в областях совместных исследований, соавторства,
+                            рецензирования и повышения индекса цитирования.</div>
+                        <button class="promo__btn">Присоединиться</button>
+                    </div>
+                    <div class="promo__image-container">
+                        <img class="promo__image" src="img/bg-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__howitworks howitworks">
+            <div class="howitworks__container">
+                <h1 class="howitworks__title">Как это работает</h1>
+                <div class="howitworks__list">
+                    <li class="howitworks__item item-howitworks">
+                        <div class="item-howitworks__image-container item-howitworks__image-container_first">
+                            <img class="item-howitworks__image" src="img/howitworks_1.svg" alt="">
+                        </div>
+                        <p class="item-howitworks__text">Оцените привлекательность <br>темы</p>
+                    </li>
+                    <li class="howitworks__item item-howitworks">
+                        <div class="item-howitworks__image-container item-howitworks__image-container_second">
+                            <img class="item-howitworks__image" src="img/howitworks_2.svg" alt="">
+                        </div>
+                        <p class="item-howitworks__text">Выполните совместные исследования</p>
+                    </li>
+                    <li class="howitworks__item item-howitworks">
+                        <div class="item-howitworks__image-container item-howitworks__image-container_third">
+                            <img class="item-howitworks__image" src="img/howitworks_3.svg" alt="">
+                        </div>
+                        <p class="item-howitworks__text">Улучшите написанную работу</p>
+                    </li>
+                    <li class="howitworks__item item-howitworks item-howitworks_last">
+                        <div class="item-howitworks__image-container item-howitworks__image-container_last">
+                            <img class="item-howitworks__image" src="img/howitworks_4.svg" alt="">
+                        </div>
+                        <p class="item-howitworks__text">Продвиньте свою работу</p>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__community community">
+            <div class="community__container">
+                <h1 class="community__title ">Сообщество</h1>
+                <p class="community__subtitle">Тысячи учёных уже предлагают свою помощь</p>
+                <ul class="community__list">
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="community__item item-community">
+                        <ul class="item-community__categories categories">
+                            <li class="categories__item categories__item_yellow">
+                                <p class="categories__text categories__text_yellow">Повысить цитируемость своих ...</p>
+                            </li>
+                            <li class="categories__item categories__item_green">
+                                <p class="categories__text categories__text_green"> Medicine/Pharma</p>
+                            </li>
+                        </ul>
+                        <h3 class="item-community__headline">Вопросы проектирования трансатлантического межнационального
+                            продуктопровода в условиях нарастающей коронавирусной пандемии</h3>
+                        <p class="item-community__subtitle item-community__subtitle_comment">Комментарий</p>
+                        <p class="item-community__text item-community__comment">Могу ещё помочь со статистической
+                            обработкой</p>
+                        <p class="item-community__subtitle item-community__subtitle_reward">Вознаграждение</p>
+                        <p class="item-community__text item-community__reward">$2500</p>
+                        <ul class="item-community__keys keys">
+                            <li class="keys__item">
+                                <p class="keys__text">первый ключ</p>
+                            </li>
+                            <li class="keys__item">
+                                <p class="keys__text">второй ключ</p>
+                            </li>
+                            <li class="keys__item keys__item_last">
+                                <p class="keys__text">третий ключ</p>
+                            </li>
+                        </ul>
+                        <div class="item-community__author author">
+                            <div class="author__img-container">
+                                <img class="author__img" src="img/author__photo.jpg" alt="">
+                            </div>
+                            <div class="author__info info-author">
+                                <ul class=" info-author__list">
+                                    <li class="info-author__item info-author__first">Артём Белоусов</li>
+                                    <li class="info-author__item">учёный (кандидат наук)</li>
+                                    <li class="info-author__item info-author__item_last">Санкт-Петербургский горный
+                                        университет</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="author__btns">
+                            <button class="author__btn">Предложить сотрудничество</button>
+                            <a href="#" class="author__link link-author">
+                                <img class="link-author__img" src="img/author-link.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+
+            </div>
+            <div class="community__seeall">
+                <button class="community__seeall-btn">Смотреть все</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page__footer footer">
+        <div class="footer__container">
+            <div class="footer__list">
+                <div class="footer__item item-footer item-footer_first">
+                    <h2 class="item-footer__headline">Authortie</h2>
+                    <p class="item-footer__subtitle">© Все права защищены</p>
+                </div>
+                <div class="footer__item item-footer item-footer_second">
+                    <ul class="item-footer__list">
+                        <li class="item-footer__item">
+                            <a href="" class="item-footer__link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="item-footer__item">
+                            <a href="" class="item-footer__link">Аналитика</a>
+                        </li>
+                        <li class="item-footer__item">
+                            <a href="" class="item-footer__link">Сообщество</a>
+                        </li>
+                        <li class="item-footer__item">
+                            <a href="" class="item-footer__link">Для организаций</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item item-footer item-footer_last">
+                    <ul class="item-footer__socials socials">
+                        <li class="socials__item">
+                            <img clas="socials__icon" src="img/facebook (3) 1.svg" alt="">
+                        </li>
+                        <li class="socials__item">
+                            <img clas="socials__icon" src="img/instagram (1) 1.svg" alt="">
+                        </li>
+                        <li class="socials__item">
+                            <img clas="socials__icon" src="img/telegram 1.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script rel="text/javascript" src="/script.js"></script>
+
+</body>
+
+</html>
