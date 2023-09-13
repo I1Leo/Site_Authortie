@@ -105,6 +105,10 @@ body {
    line-height: 1;
 }
 
+a {
+   text-decoration: none;
+}
+
 ol,
 ul,
 li {
@@ -133,4 +137,9 @@ input {
    &:focus {
       outline: none;
    }
+}
+
+button {
+   border: none;
+   padding: 0;
 }
