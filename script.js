@@ -102,7 +102,6 @@ let communityTitle = document.getElementsByClassName('community__title')[0];
 let seeAllBtn = document.getElementsByClassName('community__seeall-btn')[0];
 
 seeAllBtn.addEventListener('click', () => {
-   console.log([...communityItem].slice(3))
    if (!isClicked) {
       [...communityItem].map(item => communityList.insertAdjacentHTML('beforeend', item.outerHTML));
       isClicked = true;
