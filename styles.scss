@@ -104,7 +104,7 @@ button {
 }
 
 .close {
-   content: url('/img/cross__popup.svg');
+   content: url('img/cross__popup.svg');
    position: absolute;
    display: flex;
    justify-content: center;
@@ -463,7 +463,7 @@ button {
    }
 
    &::before {
-      content: url(/img/login_mob.svg);
+      content: url(img/login_mob.svg);
    }
 }
 
@@ -1204,7 +1204,7 @@ button {
    }
 
    &::before {
-      content: url(/img/reward__icon.svg);
+      content: url(img/reward__icon.svg);
       align-self: center;
    }
 }
@@ -1238,7 +1238,7 @@ button {
    }
 
    &::before {
-      content: url('/img/key.svg');
+      content: url('img/key.svg');
       align-self: top;
       width: 9px;
       height: 9px;
