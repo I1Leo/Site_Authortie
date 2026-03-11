@@ -1,0 +1,41 @@
+.text {
+   text-align: center;
+   font-family: Roboto;
+   font-size: 11px;
+   font-style: normal;
+   font-weight: 900;
+   line-height: normal;
+   letter-spacing: 0.44px;
+   text-transform: uppercase;
+   border-radius: 75px;
+   padding: 10px 0 8px 0;
+
+   @media (max-width: 1086px) {
+      & {
+         font-size: 9px;
+         padding: 9px 10px 8px 10px;
+      }
+   }
+
+   @media (max-width: 800px) {
+      & {
+         display: inline-block;
+      }
+   }
+}
+
+.yellow {
+   color: #BC9300;
+   background-color: #FDFFE7;
+
+   @media (max-width: 800px) {
+      & {
+         padding-bottom: 5px;
+      }
+   }
+}
+
+.green {
+   color: #00A880;
+   background-color: #EBFFFA;
+}

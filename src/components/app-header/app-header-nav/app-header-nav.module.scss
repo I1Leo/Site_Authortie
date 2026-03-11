@@ -1,0 +1,23 @@
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   background: white;
+}
+
+.logo {
+   padding-right: 60px;
+
+   @media (max-width: 1366px) {
+      & {
+         padding-right: 37px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         padding-right: 0;
+      }
+   }
+}

@@ -1,0 +1,168 @@
+@use "../../styles/layout" as *;
+
+.footer {
+   background-color: #262628;
+}
+
+.container {
+ @include container
+}
+
+.items {
+   display: flex;
+   justify-content: space-between;
+   padding: 41px 0 23px 0;
+   align-items: center;
+
+   @media (max-width: 1024px) {
+      & {
+         flex-direction: column;
+         padding: 22px 0 16px 0;
+      }
+   }
+
+   @media (max-width: 480px) {
+      & {
+         display: grid;
+         grid-template-columns: minmax(auto, 144px) 1fr;
+         grid-template-rows: 1fr 1fr;
+         padding: 23px 0;
+      }
+   }
+}
+
+
+@media (max-width: 1024px) {
+   .first {
+      order: 2;
+      padding-bottom: 15px;
+   }
+
+   .second {
+      align-self: stretch;
+      order: 1;
+      padding-bottom: 38px;
+   }
+
+   .last {
+      order: 3;
+   }
+}
+
+@media (max-width: 480px) {
+   .first {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding-bottom: 0;
+      align-self: end;
+   }
+
+   .second {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2 span;
+      padding-bottom: 0;
+   }
+
+   .last {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: start;
+   }
+}
+
+.headline {
+   font-size: 16px;
+   line-height: 24px;
+   color: white;
+
+   @media (max-width: 1366px) {
+      & {
+         font-size: 14px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         text-align: center;
+         font-size: 12px;
+      }
+   }
+
+   @media (max-width: 480px) {
+      & {
+         text-align: start;
+         padding-bottom: 0;
+      }
+   }
+}
+
+.subtitle {
+   font-size: 16px;
+   line-height: 24px;
+   color: #888888;
+
+   @media (max-width: 1366px) {
+      & {
+         font-size: 14px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         font-size: 12px;
+      }
+   }
+}
+
+.links {
+   display: flex;
+   gap: 78px;
+
+   @media (max-width: 1366px) {
+      & {
+         gap: 45px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         justify-content: space-between;
+      }
+   }
+
+   @media (max-width: 480px) {
+      & {
+         flex-direction: column;
+         gap: 10px;
+      }
+   }
+
+   @media (max-width: 480px) {
+      & {
+         align-self: flex-end;
+      }
+   }
+}
+
+
+.socials {
+   display: flex;
+   gap: 37px;
+
+   @media (max-width: 1366px) {
+      & {
+         gap: 25px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         gap: 14px;
+      }
+   }
+}

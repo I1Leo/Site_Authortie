@@ -1,0 +1,21 @@
+@import "null.scss";
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+button {
+   background: none;
+   border: none;
+
+   &:hover {
+      cursor: pointer;
+   }
+}

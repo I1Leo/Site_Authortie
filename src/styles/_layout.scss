@@ -1,0 +1,37 @@
+@mixin container {
+   max-width: 1597px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+   overflow-x: hidden;
+
+   @media (max-width: 1366px) {
+      & {
+         max-width: 1175px;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      & {
+         max-width: 893px;
+      }
+   }
+
+   @media (max-width: 768px) {
+      & {
+         max-width: 658px;
+      }
+   }
+
+   @media (max-width: 480px) {
+      & {
+         max-width: 396px;
+      }
+   }
+
+   @media (max-width: 320px) {
+      & {
+         max-width: none;
+      }
+   }
+}

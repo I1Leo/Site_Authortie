@@ -1,0 +1,22 @@
+<svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="17" fill="#E5E5E5"/>
+<g id="1024" clip-path="url(#clip0_0_1)">
+<rect width="1024" height="2270" transform="translate(-931 -33)" fill="#F9FBFF"/>
+<g id="1 &#208;&#177;&#208;&#187;&#208;&#190;&#208;&#186;">
+<g id="Group 112">
+<rect id="Rectangle 43" x="-931" y="-33" width="1024" height="528" fill="#CCE7FF"/>
+</g>
+</g>
+<g id="Header">
+<rect id="background" x="-931" y="-33" width="1024" height="85" fill="white"/>
+<g id="coolicon">
+<path id="coolicon_2" d="M26 17H11.5V15.1667H26V17ZM26 10H0V8.08333H26V10ZM26 3H0V1H26V3Z" fill="#575756"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1024" height="2270" fill="white" transform="translate(-931 -33)"/>
+</clipPath>
+</defs>
+</svg>
