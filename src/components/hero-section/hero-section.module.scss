@@ -1,222 +1,219 @@
-@use "../../styles/layout" as *;
+@use '../../styles/layout' as *;
 
 .hero_section {
-   background: linear-gradient(to right, #fff, #CCE7FF);
-
-   
+  background: linear-gradient(to right, #fff, #cce7ff);
 }
 
 .container {
-    @include container
+  @include container;
 }
 
 .body {
-   display: flex;
-   position: relative;
-   
-   padding: 68px 0 55px 0;
+  display: flex;
+  position: relative;
 
-   @media (max-width: 1366px) {
-      & {
-         padding: 78.7px 0 64.83px 0;
-      }
-   }
+  padding: 68px 0 55px 0;
 
-   @media (max-width: 1024px) {
-      & {
-         padding: 71px 0 65px 0;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      padding: 78.7px 0 64.83px 0;
+    }
+  }
 
-   @media (max-width: 726px) {
-      & {
-         padding: 14px 0 35px 0;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      padding: 71px 0 65px 0;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         flex-direction: column;
-         padding: 45px 0 0 0;
-      }
-   }
+  @media (max-width: 726px) {
+    & {
+      padding: 14px 0 35px 0;
+    }
+  }
 
-   @media (max-width: 320px) {
-      & {
-         padding: 31px 0 0 0;
-      }
-   }
-  
+  @media (max-width: 480px) {
+    & {
+      flex-direction: column;
+      padding: 45px 0 0 0;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      padding: 31px 0 0 0;
+    }
+  }
 }
 
 .article {
-   flex: 0 1 726px;
-   align-self: center;
+  flex: 0 1 726px;
+  align-self: center;
 
-   @media (max-width: 1366px) {
-      & {
-         flex: 0 1 483px;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      flex: 0 1 483px;
+    }
+  }
 
-   @media (max-width: 1024px) {
-      & {
-         flex: 0 1 393px;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      flex: 0 1 393px;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         flex: 0;
-      }
-   }
+  @media (max-width: 480px) {
+    & {
+      flex: 0;
+    }
+  }
 }
 
 .headline {
-   color: $page_font-color;
-   font-family: Roboto;
-   font-size: 50px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 105.5%;
-   padding-bottom: 33px;
+  color: $page_font-color;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105.5%;
+  padding-bottom: 33px;
 
-   @media (max-width: 1366px) {
-      & {
-         font-size: 36px;
-         padding-bottom: 24px;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      font-size: 36px;
+      padding-bottom: 24px;
+    }
+  }
 
-   @media (max-width: 1024px) {
-      & {
-         font-size: 30px;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      font-size: 30px;
+    }
+  }
 
-   @media (max-width: 726px) {
-      & {
-         font-size: 28px;
-      }
-   }
+  @media (max-width: 726px) {
+    & {
+      font-size: 28px;
+    }
+  }
 
-   @media (max-width: 320px) {
-      & {
-         font-size: 24px;
-      }
-   }
+  @media (max-width: 320px) {
+    & {
+      font-size: 24px;
+    }
+  }
 }
 
 .text {
-   color: $page_font-color;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 124%;
-   width: 616px;
-   padding-bottom: 33px;
+  color: $page_font-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124%;
+  width: 616px;
+  padding-bottom: 33px;
 
-   @media (max-width: 1366px) {
-      & {
-         font-size: 16px;
-         width: 100%;
-         padding-bottom: 24px;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      font-size: 16px;
+      width: 100%;
+      padding-bottom: 24px;
+    }
+  }
 
-   @media (max-width: 1024px) {
-      & {
-         font-size: 14px;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      font-size: 14px;
+    }
+  }
 
-   @media (max-width: 726px) {
-      & {
-         padding-bottom: 22px;
-      }
-   }
+  @media (max-width: 726px) {
+    & {
+      padding-bottom: 22px;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         padding-bottom: 26px;
-      }
-   }
+  @media (max-width: 480px) {
+    & {
+      padding-bottom: 26px;
+    }
+  }
 
-   @media (max-width: 320px) {
-      & {
-         padding-bottom: 15px;
-      }
-   }
+  @media (max-width: 320px) {
+    & {
+      padding-bottom: 15px;
+    }
+  }
 }
 
 .btn {
-   color: white;
-   text-align: center;
-   font-family: Roboto;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: normal;
-   letter-spacing: 0.72px;
-   text-transform: uppercase;
-   padding: 15px 44.22px 14px 43px;
-   border-radius: 123px;
-   background: #3A85F4;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  padding: 15px 44.22px 14px 43px;
+  border-radius: 123px;
+  background: #3a85f4;
 
-   &:hover{
-      background: darken(#3A85F4, 7);
-   }
+  &:hover {
+    background: darken(#3a85f4, 7);
+  }
 
-   @media (max-width: 1366px) {
-      & {
-         font-size: 14px;
-         letter-spacing: 0.56px;
-         padding: 14px 43px 12px 44px;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      font-size: 14px;
+      letter-spacing: 0.56px;
+      padding: 14px 43px 12px 44px;
+    }
+  }
 
-   @media (max-width: 1024px) {
-      & {
-         font-size: 13px;
-         padding: 14px 32px 13px 31px;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      font-size: 13px;
+      padding: 14px 32px 13px 31px;
+    }
+  }
 
-   @media (max-width: 726px) {
-      & {
-         padding: 12px 27px 11px 28px;
-      }
-   }
+  @media (max-width: 726px) {
+    & {
+      padding: 12px 27px 11px 28px;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         padding: 12px 31px 11px 32px;
-      }
-   }
+  @media (max-width: 480px) {
+    & {
+      padding: 12px 31px 11px 32px;
+    }
+  }
 
-   @media (max-width: 320px) {
-      &n {
-         padding: 10px 20px 9px 20px;
-      }
-   }
+  @media (max-width: 320px) {
+    &n {
+      padding: 10px 20px 9px 20px;
+    }
+  }
 }
 
 .image_container {
-   @media (max-width: 1024px) {
-      & {
-         align-self: center;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      align-self: center;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         width: 220px;
-         margin: 0 0 0 auto;
-         padding-top: 15px;
-      }
-   }
+  @media (max-width: 480px) {
+    & {
+      width: 220px;
+      margin: 0 0 0 auto;
+      padding-top: 15px;
+    }
+  }
 }
 
 .image {
-   max-width: 100%;
+  max-width: 100%;
 }

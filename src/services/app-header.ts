@@ -1,19 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit"
-
-
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-   isBurgerActive: false
-}
+  isBurgerActive: false,
+};
 
 export const appHeaderSlice = createSlice({
-   name: "appHeaderBurger",
-   initialState,
-   reducers: {
-      toggleBurger(state) {
-         state.isBurgerActive = !state.isBurgerActive;
-      }
-   }
-})
+  name: 'appHeaderBurger',
+  initialState,
+  reducers: {
+    toggleBurger(state) {
+      state.isBurgerActive = !state.isBurgerActive;
+    },
+  },
+});
 
-export const {toggleBurger} = appHeaderSlice.actions;
+export const { toggleBurger } = appHeaderSlice.actions;

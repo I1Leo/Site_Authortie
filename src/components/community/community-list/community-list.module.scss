@@ -1,48 +1,47 @@
 .list {
-   display: grid;
-   grid-template-columns: repeat(3, minmax(auto, 500px));
-   grid-template-rows: repeat(2, minmax(568px, auto));
-   justify-content: space-between;
-   row-gap: 33px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 500px));
+  grid-template-rows: repeat(2, minmax(568px, auto));
+  justify-content: space-between;
+  row-gap: 33px;
 
-   @media (max-width: 1568px) {
-      & {
-         display: grid;
-         grid-template-columns: repeat(2, minmax(auto, 500px));
-         grid-template-rows: repeat(3, minmax(568px, auto));
-         justify-content: center;
-         gap: 33px;
-      }
-   }
+  @media (max-width: 1568px) {
+    & {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 500px));
+      grid-template-rows: repeat(3, minmax(568px, auto));
+      justify-content: center;
+      gap: 33px;
+    }
+  }
 
-   @media (max-width: 1086px) {
-      & {
-         display: grid;
-         grid-template-columns: repeat(2, minmax(auto, 376px));
-         grid-template-rows: repeat(3, minmax(465px, auto));
-         justify-content: center;
-         gap: 18px;
-      }
-   }
+  @media (max-width: 1086px) {
+    & {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 376px));
+      grid-template-rows: repeat(3, minmax(465px, auto));
+      justify-content: center;
+      gap: 18px;
+    }
+  }
 
-   @media (max-width: 1086px) {
-      & {
-         display: grid;
-         grid-template-columns: repeat(2, minmax(auto, 376px));
-         grid-template-rows: repeat(3, minmax(465px, auto));
-         justify-content: center;
-         gap: 18px;
-      }
-   }
+  @media (max-width: 1086px) {
+    & {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 376px));
+      grid-template-rows: repeat(3, minmax(465px, auto));
+      justify-content: center;
+      gap: 18px;
+    }
+  }
 
-
-   @media (max-width: 660px) {
-      & {
-         display: grid;
-         grid-template-columns: minmax(auto, 340px);
-         grid-template-rows: repeat(auto, minmax(493px, auto));
-         justify-content: center;
-         gap: 18px;
-      }
-   }
+  @media (max-width: 660px) {
+    & {
+      display: grid;
+      grid-template-columns: minmax(auto, 340px);
+      grid-template-rows: repeat(auto, minmax(493px, auto));
+      justify-content: center;
+      gap: 18px;
+    }
+  }
 }

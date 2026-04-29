@@ -1,7 +1,6 @@
-@use "../../styles/layout" as *;
+@use '../../styles/layout' as *;
 
 .header {
-   border: white;
-   @include container
+  border: white;
+  @include container;
 }
-

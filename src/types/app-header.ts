@@ -1,15 +1,14 @@
-
 export type TAppHeaderNavSiteItem = {
-   text: string
-}
+  text: string;
+};
 
 export type TAppHeaderNavUserItem = {
-   type: "text" | "icon";
-   text?: string;
-   icon?: string;
-}
+  type: 'text' | 'icon';
+  text?: string;
+  icon?: string;
+};
 
 export type TAppHeaderInsertItem = {
-   type: "link" | "btn";
-   text: string;
-}
+  type: 'link' | 'btn';
+  text: string;
+};

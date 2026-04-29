@@ -1,9 +1,9 @@
 .nav_site {
-   display: flex;
+  display: flex;
 
-   @media (max-width: 1024px) {
-      & {
-         display: none;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      display: none;
+    }
+  }
 }

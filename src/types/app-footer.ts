@@ -1,8 +1,7 @@
-
 export type TAppFooterLinkProps = {
-   text: string
-}
+  text: string;
+};
 
 export type TAppFooterSocialProps = {
-   img: string
-}
+  img: string;
+};

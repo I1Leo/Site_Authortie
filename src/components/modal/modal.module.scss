@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  width: 434px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 434px;
+  border-radius: 10px;
+  background: $page_color;
+  padding: 50px 35px;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    & {
+      width: 330px;
+    }
+  }
+}
+
+.close {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   top: -15px;
+   right: -15px;
+   border-radius: 100%;
+   background: #DCDCDC;
+   padding: 10px 13px 10px 12px;
+}

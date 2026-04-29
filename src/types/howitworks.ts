@@ -1,6 +1,5 @@
-
 export type THowItWorksItem = {
-   image: string,
-   text: string,
-   idx: number
-}
+  image: string;
+  text: string;
+  idx: number;
+};

@@ -1,27 +1,27 @@
 .link {
-   font-size: 16px;
-   line-height: 19px;
-   color: white;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
 
-   @media (max-width: 1366px) {
-      & {
-         font-size: 14px;
-      }
-   }
+  @media (max-width: 1366px) {
+    & {
+      font-size: 14px;
+    }
+  }
 
-   @media (max-width: 1024px) {
-      & {
-         font-size: 12px;
-      }
-   }
+  @media (max-width: 1024px) {
+    & {
+      font-size: 12px;
+    }
+  }
 
-   @media (max-width: 480px) {
-      & {
-         text-align: end;
-      }
-   }
+  @media (max-width: 480px) {
+    & {
+      text-align: end;
+    }
+  }
 
-   &:hover {
-      text-decoration: underline;
-   }
+  &:hover {
+    text-decoration: underline;
+  }
 }

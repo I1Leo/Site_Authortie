@@ -1,9 +1,9 @@
-import { TAppFooterSocialProps } from "../../../types/app-footer";
+import type { TAppFooterSocialProps } from '../../../types/app-footer';
 
-export default function AppFooterSocial({img} : TAppFooterSocialProps) {
-   return (
-      <li>
-         <img  src={img} alt=""/>
-      </li>
-   )
+export default function AppFooterSocial({ img }: TAppFooterSocialProps) {
+  return (
+    <li>
+      <img src={img} alt="" />
+    </li>
+  );
 }
