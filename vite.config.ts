@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import * as path from 'path';
 
 export default defineConfig({
+  base: '/Site_Authortie/',
   plugins: [react()],
   resolve: {
     alias: {
