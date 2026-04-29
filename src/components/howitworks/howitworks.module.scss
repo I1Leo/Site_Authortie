@@ -1,0 +1,141 @@
+@use '../../styles/layout' as *;
+
+.howitworks {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  background: $page_color;
+
+  @media (max-width: 1366px) {
+    & {
+      padding-top: 70px;
+      padding-bottom: 110px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      padding-top: 67px;
+      padding-bottom: 78px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding-top: 69px;
+      padding-bottom: 62px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    & {
+      padding-top: 52px;
+      padding-bottom: 94px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      padding-top: 51px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.container {
+  @include container;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+  text-align: center;
+  padding-bottom: 47px;
+
+  @media (max-width: 1366px) {
+    & {
+      font-size: 26px;
+      padding-bottom: 46px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      padding-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 24px;
+      padding-bottom: 31px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    & {
+      padding-bottom: 41px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      font-size: 20px;
+      padding-bottom: 43px;
+    }
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 266px);
+  grid-template-rows: 333px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+
+  @media (max-width: 1366px) {
+    & {
+      justify-content: center;
+      grid-template-columns: repeat(4, 179px);
+      grid-template-rows: 241px;
+      column-gap: 85px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      grid-template-columns: repeat(4, 121px);
+      grid-template-rows: 188px;
+      column-gap: 75.37px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      justify-content: space-between;
+      grid-template-columns: repeat(4, 95px);
+      grid-template-rows: 176px;
+      column-gap: 25px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    & {
+      justify-content: center;
+      grid-template-columns: repeat(2, 100px);
+      grid-template-rows: repeat(2, 164px);
+      column-gap: 73px;
+      row-gap: 50px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      grid-template-rows: repeat(2, 164px);
+      column-gap: 54px;
+      row-gap: 38px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.nav_user {
+  display: flex;
+  width: 460px;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 56px;
+
+  @media (max-width: 1366px) {
+    & {
+      gap: 45px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      gap: 33px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    & {
+      gap: 25px;
+    }
+  }
+}
